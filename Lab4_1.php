@@ -9,10 +9,10 @@ $add = $x + $y;
 $sub = $z - $x;
 $mul = $y * $z;
 $div = $mul / $z;
-$message  = "ผลบวกของ a + b = ";
-$message2 = "ผลบวกของ a - b = ";
-$message3 = "ผลบวกของ a * b = ";
-$message4 = "ผลบวกของ a / b = ";
+$message  = "ผลบวกของ  a + b = ";
+$message2 = "ผลลบของ  a - b = ";
+$message3 = "ผลคูณของ  a * b = ";
+$message4 = "ผลหารของ  a / b = ";
 
 echo $message; echo $add; echo "<br />";
 echo $message2; echo $sub; echo "<br />";
