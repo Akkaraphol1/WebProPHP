@@ -1,5 +1,5 @@
 <html>
-<head><title>การก าหนดค่าแบบอ้างอิง</title></head>
+<head><title>การกำหนดค่าแบบอ้างอิง</title></head>
 <body>
 <?php
 $x = 123;
