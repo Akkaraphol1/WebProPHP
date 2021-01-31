@@ -172,7 +172,6 @@ table, th, td {
         $GPA = (($GD + $GD2 + $GD3 + $GD4 + $GD5)/($GA1 + $GA2 + $GA3 + $GA4 + $GA5));
        // $GPA2 = var_dump(round($GPA, 2));
         $GPA3 = (round($GPA,2));
-        $GPA3 -= 0.01;
        echo "<th colspan='2' width='100%' ><center><h2>Grade Average</h2></center></th><td><center><h2>",$GPA3."</h2></center></td>";
                    
     }
