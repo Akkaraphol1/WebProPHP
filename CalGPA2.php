@@ -86,7 +86,6 @@ table, th, td {
             else if($G5 == "D" || $G5 == "d") $G10 = 1;
             else if($G5 == "F" || $G5 == "f") $G10 = 0;
        
-
     if($o == "1") 
        {
             $GD = (1*$G6);
