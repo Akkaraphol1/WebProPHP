@@ -46,6 +46,7 @@ table, th, td {
             else if($G1 == "B" || $G1 == "b") $G6 = 3;
             else if($G1 == "C+" || $G1 == "c+") $G6 = 2.5;
             else if($G1 == "C" || $G1 == "c") $G6 = 2;
+            else if($G1 == "D+" || $G1 == "d+") $G6 = 1.5;
             else if($G1 == "D" || $G1 == "d") $G6 = 1;
             else if($G1 == "F" || $G1 == "f") $G6 = 0;
            
@@ -54,6 +55,7 @@ table, th, td {
             else if($G2 == "B" || $G2 == "b") $G7 = 3;
             else if($G2 == "C+" || $G2 == "c+") $G7 = 2.5;
             else if($G2 == "C" || $G2 == "c") $G7 = 2;
+            else if($G2 == "D+" || $G2 == "d+") $G7 = 1.5;
             else if($G2 == "D" || $G2 == "d") $G7 = 1;
             else if($G2 == "F" || $G2 == "f") $G7 = 0;
        
@@ -62,6 +64,7 @@ table, th, td {
             else if($G3 == "B" || $G3 == "b") $G8 = 3;
             else if($G3 == "C+" || $G3 == "c+") $G8 = 2.5;
             else if($G3 == "C" || $G3 == "c") $G8 = 2;
+            else if($G3 == "D+" || $G3 == "d+") $G8 = 1.5;
             else if($G3 == "D" || $G3 == "d") $G8 = 1;
             else if($G3 == "F" || $G3 == "f") $G8 = 0;
        
@@ -70,6 +73,7 @@ table, th, td {
             else if($G4 == "B" || $G4 == "b") $G9 = 3;
             else if($G4 == "C+" || $G4 == "c+") $G9 = 2.5;
             else if($G4 == "C" || $G4 == "c") $G9 = 2;
+            else if($G4 == "D+" || $G4 == "d+") $G9 = 1.5;
             else if($G4 == "D" || $G4 == "d") $G9 = 1;
             else if($G4 == "F" || $G4 == "f") $G9 = 0;
        
@@ -78,6 +82,7 @@ table, th, td {
             else if($G5 == "B" || $G5 == "b") $G10 = 3;
             else if($G5 == "C+" || $G5 == "c+") $G10 = 2.5;
             else if($G5 == "C" || $G5 == "c") $G10 = 2;
+            else if($G5 == "D+" || $G5 == "d+") $G10 = 1.5;
             else if($G5 == "D" || $G5 == "d") $G10 = 1;
             else if($G5 == "F" || $G5 == "f") $G10 = 0;
        
@@ -136,8 +141,8 @@ table, th, td {
 
     if($o4 == "1") 
         {
-                $GD4 = (1*$G9);
-                $GA4 = 1;
+            $GD4 = (1*$G9);
+            $GA4 = 1;
         }
         else if($o4 == "2") 
         {
