@@ -80,9 +80,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     for($x = $c1 ; $x > 0 ; $x--){
         //    
 
-        $s = substr($ccs,-$x);//Kgin gin in n 
-        $c = ord($s);// 36 25 65 52
-        $i = chr($c);// K  g  i  n
+        $s = substr($ccs,-$x);
+        $c = ord($s);
+        $i = chr($c);
         $LL = strlen(countSort($n1));
 
         if($c == 32 || $i == " "){
@@ -93,11 +93,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                echo "$i = 1,";
            }
 
-  
-      
-      
-        // s   dd
-         
     }
 }
     ?>
