@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     function Find_Ascii($c1,$css,$s,$cc){
         for($x = $c1 ; $x > 0 ; $x--){
         
-            $s = substr($ccs,-$x);
+            $s = substr($css,-$x);
             $cc = ord($s);
           
                 
