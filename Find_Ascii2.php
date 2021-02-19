@@ -18,28 +18,31 @@
     </form>
 
     <?php
+
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    function Find_Ascii($c1,$css,$s,$cc){
-        for($x = $c1 ; $x > 0 ; $x--){
-        
-            $s = substr($css,-$x);
-            $cc = ord($s);
-          
-                
-                echo "<center>$s[0]  : Ascii = ".$cc."</center><br>\n";      
-        } 
-       return; 
-    }
-    
     $n1 = $_POST['Text1'];
 
     $new_str = preg_replace("/[^a-zA-Z\d]/i", '', $n1);
     $ccs = count_chars($new_str,3);
-
-    $c1 = strlen($ccs);
     
-   echo Find_Ascii($c1,$css,$s,$cc);
+    $c1 = strlen($ccs);
+
+    function Find_Ascii($c1,$ccs,&$s,&$cc){
+        for($x = $c1 ; $x > 0 ; $x--){
+        
+            $s = substr($ccs,-$x);
+            $cc = ord($s);
+          
+                
+            echo "<center>$s[0]  : Ascii = ".$cc."</center><br>\n";      
+        } 
+       return;
+    }
+
+   echo Find_Ascii($c1,$ccs,$s,$cc);
 }
 
     ?>
