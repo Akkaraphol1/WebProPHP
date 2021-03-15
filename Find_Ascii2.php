@@ -16,10 +16,7 @@
       <center><h2>  Count Char in Sentence </h2></center> <br>
 
     </form>
-
     <?php
-
-
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -44,9 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    echo Find_Ascii($c1,$ccs,$s,$cc);
 }
-
     ?>
-
-
 </body>
 </html>

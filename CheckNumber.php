@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
     <h2>Check Number</h2>
-    <form action="#" method="get">
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         <input type="text" name="number" value = 0>
         <br>
         <input type="submit" value="check num">
@@ -17,10 +17,11 @@
     <body>
     <?php
        // $num = 0;
+       if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $odd = 0;
         $even = 0;
         $zero = 0;
-        $num = $_GET['number'];
+        $num = $_POST['number'];
         echo "<br> Num is ".$num;
         while($num>0){
             $check = $num%10;
@@ -47,6 +48,8 @@
         echo "<td>".$zero."</td>";
         echo "</tr>";
         echo "</table>";
+
+    }
     ?>
     </body>
 

@@ -8,13 +8,16 @@
 
 <body>
     <center>
-    <form action="Lab9-2U.php" method="POST">
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         <label>จำนวนนักเรียน:</label>
         <input type="number" name="stu" required>
         <input type="submit" name="sub" value="submit">
     </form>
     </center>
+
+
     <?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $MaxStudent = $_POST['stu'];
 $score = array();
 $score2 = array(0,0,0,0,0,0,0,0);
@@ -87,6 +90,7 @@ echo '<br>';
 echo 'Min:',min($score),'คนที่:',mi($score);
 echo '</center>';
 }
+  }
 function average($data, $max) {
     $total = 0;
     for($n = 0 ; $n < $max; $n++) {
@@ -110,6 +114,7 @@ function average($data, $max) {
             }
         }
     }
+
     ?>
 </body>
 

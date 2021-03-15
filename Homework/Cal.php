@@ -16,20 +16,20 @@
     if($fruit == 'Subparot'){
         echo "<h3> ราคาต่อกิโล : 100 บาท <br>";
         echo "จำนวนกิโล : $kg กิโลกรัม <br>";
-        $inc = $kg * $size;
-        echo "ราคารวม : $inc บาท<br> "; 
+         $kg *= 100;
+        echo "ราคารวม : $kg บาท<br> "; 
     }
     if($fruit == 'Lingi'){
         echo "<h3> ราคาต่อกิโล : 200 บาท<br> ";
         echo "จำนวนกิโล : $kg กิโลกรัม<br>";
-        $inc = $kg * $size;
-        echo "ราคารวม : $inc บาท<br> ";
+        $kg *= 200;
+        echo "ราคารวม : $kg บาท<br> ";
     }
     if($fruit == 'Orange'){
         echo "<h3> ราคาต่อกิโล : 300 บาท<br> ";
         echo "จำนวนกิโล : $kg กิโลกรัม<br>";
-        $inc = $kg * $size;
-        echo "ราคารวม : $inc บาท<br> ";
+        $kg *= 300;
+        echo "ราคารวม : $kg บาท<br> ";
     }
     ?>
 </body>
